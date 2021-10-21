@@ -1,0 +1,71 @@
+@import '../../styles/variables'
+
+.menu
+    display: flex
+    max-width: 300px
+    width: 100%
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        width: 100%
+    &-item
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            right: 0
+            width: 0
+            border-bottom: 1px solid $black-color
+            transition: all ease-in .3s
+            pointer-events: none
+        &:hover
+            cursor: pointer
+        &:hover::after
+            content: ""
+            position: absolute
+            left: 0
+            width: 100%
+            left: 0
+            right: auto
+    &-link
+        display: flex
+        align-items: center
+        height: 30px
+        color: $black-color
+        text-decoration: none
+        font-family: 'Oswald', sans-serif
+        font-weight: 300
+        text-transform: uppercase
+        transition: color ease-in .3s
+    .link__white
+        color: $white-bg
+    .nav-column
+        flex-direction: column
+        margin-top: 2rem
+
+
+.item__white
+    &::after
+        content: ""
+        position: absolute
+        right: 0
+        width: 0
+        border-bottom: 1px solid $white-bg
+        transition: width ease-in .3s
+        pointer-events: none
+    &:hover
+        cursor: pointer
+    &:hover::after
+        content: ""
+        position: absolute
+        left: 0
+        width: 100%
+        left: 0
+        right: auto
+
+@media (max-width: 800px)
+    .menu
+        display: none
+    .nav-column
+        display: flex

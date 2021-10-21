@@ -1,0 +1,89 @@
+@import '../../styles/variables'
+
+.intro
+    padding-top: 60px
+    .flex
+        justify-content: center
+        align-items: center
+    
+.terminal
+    max-width: 800px
+    width: 100%
+    height: 450px
+    background-color: $black-color
+    border-radius: 7px 7px 5px 5px
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .4)
+    &-menu
+        display: flex
+        align-items: center
+        border-radius: 5px 5px 0 0
+        width: 100%
+        background-color: #bbb
+        height: 25px
+    &-buttons
+        width: 14px
+        height: 14px
+        border-radius: 50%
+        background-color: #fff
+        margin-left: 10px
+    .close
+        background-color: #ff3b47
+        border: 1px solid #9d252b
+    .minimize
+        background-color: #ffc100
+        border: 1px solid #9d802c
+    .zoom
+        background-color: #00d742
+        border: 1px solid #049931
+    &-screen
+        padding: 10px
+        color: $white-bg
+        font-family: $main-font
+        .command-before
+            p
+                display: inline-block
+        .command-after
+            margin-top: 1rem
+        .executed
+            display: block
+        .tilda
+            color: #00d742
+            padding-right: 5px
+            margin-right: 5px
+        h1
+            font-size: 1.5rem
+            margin-top: 1.5rem
+            line-height: 1
+            margin-bottom: -.5rem
+        ul
+            font-size: 1.2rem
+        li
+            font-size: 1rem    
+        a
+            display: block
+            width: 68px
+            position: relative
+            color: $base-color
+            margin-top: 1rem
+            text-decoration: none
+            &::after
+                content: "------>"
+                position: absolute
+                bottom: -12px
+                left: 0
+                color: $base-color
+        .cursor
+            display: inline-block
+            border-right: .5em solid transparent
+            animation: blink-caret .6s infinite
+            padding-right: 5px
+
+@keyframes blink-caret
+    from, to
+        border-color: white
+    50%
+        border-color: transparent
+
+@media (max-width: 650px)
+    .intro
+        padding-top: 30px

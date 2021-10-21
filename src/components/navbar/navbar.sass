@@ -1,0 +1,71 @@
+@import '../../styles/variables'
+
+.navbar
+    position: fixed
+    @include max-width    
+    left: calc(50% - .01%)
+    transform: translateX(-50%)
+    height: 60px
+    transition: all ease-in .3s
+    z-index: 1
+    .container
+        padding-top: 0
+        padding-bottom: 0
+    .flex
+        justify-content: space-between
+        align-items: center
+    .logo
+        font-size: 1.7rem
+        font-family: 'Dancing Script', cursive
+        line-height: 1
+        margin-right: 1rem
+        white-space: nowrap
+        color: $black-color
+        transition: color ease-in .3s
+    .logo__white
+        color: $white-bg
+
+.navbar__bg
+    background-color: $black-color
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .4)
+
+//Burger icon
+
+.icon-container
+    cursor: pointer
+    height: 17px 
+    display: none
+.burger-icon
+    width: 25px
+    height: 2px
+    background: $black-color
+    position: relative
+    transition: all ease-in .3s
+    z-index: 3
+    &::before
+        content: ''
+        position: absolute
+        top: 7px
+        width: 25px
+        height: 2px
+        background: $black-color
+        transition: all ease-in .2s
+    &::after
+        content: ''
+        position: absolute  
+        top: 14px
+        width: 25px
+        height: 2px
+        background: $black-color
+        transition: all ease-in .1s
+
+.icon-white
+    background: $white-bg
+    &::before
+        background: $white-bg
+    &::after
+        background: $white-bg
+
+@media (max-width: 800px)
+    .icon-container
+        display: inline-block
