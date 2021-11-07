@@ -1,28 +1,32 @@
+import calcImg from '../img/calc.jpeg'
+import dataTableImg from '../img/data-table.jpeg'
+import devListImg from '../img/dev-list.jpeg'
+
 export const projectList = {
     projects: [
         {
-            img: 'https://i.ibb.co/p3dXWGj/datatable.png',
+            img: dataTableImg,
             id: 1,
             title: 'Data table',
-            desc: 'ReactJS app that f',
+            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ut accusantium ea. Ut nam harum rerum autem error voluptas at. Quae modi nulla sint, corporis ratione repellendus consectetur vitae exercitationem!',
             gitLink: 'https://github.com/kartegi/datatable',
             demoLink: 'https://datatable-d06b1.web.app/'
         },
 
         {
-            img: 'https://i.ibb.co/ydmmq9M/dev-list.png',
+            img: devListImg,
             id: 2,
             title: 'Dev list',
-            desc: '',
+            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ut accusantium ea. Ut nam harum rerum autem error voluptas at. Quae modi nulla sint, corporis ratione repellendus consectetur vitae exercitationem!',
             gitLink: 'https://github.com/kartegi/dev_list',
             demoLink: 'https://kartegi.github.io/dev_list/'
         },
         
         {
-            img: 'https://i.ibb.co/jT3nX4Q/anime-city-cyber-punk.jpg',
+            img: calcImg,
             id: 3,
             title: 'Calculator with parentheses',
-            desc: ('asdfffffffffffffffffffffffffff ffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffff fffffffffffffffffff'),
+            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ut accusantium ea. Ut nam harum rerum autem error voluptas at. Quae modi nulla sint, corporis ratione repellendus consectetur vitae exercitationem!',
             gitLink: 'https://github.com/kartegi/calculaterWithBrackets',
             demoLink: 'https://kartegi.github.io/calculaterWithBrackets/'
         },

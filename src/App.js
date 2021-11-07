@@ -7,7 +7,7 @@ import { useState } from 'react';
 import "scroll-behavior-polyfill";
 import Home from './components/home/Home';
 import Portfolio from './components/portfolio/Portfolio';
-import {projectList} from './data/data'
+import Project from './components/project/Project';
 
 function App() {
   const [burgerShow, setBurger] = useState(false)
@@ -29,7 +29,8 @@ function App() {
         <Burger scroll={scroll} show={burgerShow} handleBurgerClick={handleBurgerClick} />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/portfolio' component={() => <Portfolio projects={projectList} />} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/project/:id' component={Project} />
         </Switch>
         <Footer />
       </Router>

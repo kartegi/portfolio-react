@@ -1,23 +1,27 @@
-import React from 'react'
+import './project.sass'
+import { projectList } from '../../data/data'
 
-const Project = ({projects, id}) => {
-    const poject = projects.filter(project => project.id === id)
+const Project = (props) => {
+    const id = props.match.params.id
+    const project = projectList.projects.filter(project => project.id === +id)[0]
+
     return (
-        <div className='project' >
+        <div className='project'>
             <div className="container">
-                {}
-                <div className="project-info">
-                    <div className="project-image">
-                        <img src={project.img} alt="project img" />
+                <div className="project__info">
+                    <div className="project__img">
+                        <img src={project.img} alt="project" />
                     </div>
-                    <div className="project-links">
-                        <a href={project.gitLink}>Github</a>
+                    <div className="project__links">
+                        <a href={project.gitLink}>Github</a> <br />
                         <a href={project.demoLink}>Demo</a>
                     </div>
                 </div>
-                <div className="project-description">
-                    <h1>{project.title}</h1>
-                    <p>{project.desc}</p>
+                <div className="project__descr">
+                    <h1 className="project__title">{project.title}</h1>
+                    <p>
+                        {project.desc}
+                    </p>
                 </div>
             </div>
         </div>
