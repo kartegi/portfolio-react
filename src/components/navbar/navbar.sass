@@ -8,6 +8,7 @@
     height: 60px
     transition: all ease-in .3s
     z-index: 1
+    background-color: $black-color
     .container
         padding-top: 0
         padding-bottom: 0
@@ -20,13 +21,13 @@
         line-height: 1
         margin-right: 1rem
         white-space: nowrap
-        color: $black-color
-        transition: color ease-in .3s
-    .logo__white
         color: $white-bg
+        transition: color ease-in .3s
+    .logo__black
+        color: $black-color
 
 .navbar__bg
-    background-color: $black-color
+    background-color: $white-bg
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .4)
 
 //Burger icon
@@ -38,7 +39,7 @@
 .burger-icon
     width: 25px
     height: 2px
-    background: $black-color
+    background: $white-bg
     position: relative
     transition: all ease-in .3s
     z-index: 3
@@ -48,7 +49,7 @@
         top: 7px
         width: 25px
         height: 2px
-        background: $black-color
+        background: $white-bg
         transition: all ease-in .2s
     &::after
         content: ''
@@ -56,15 +57,15 @@
         top: 14px
         width: 25px
         height: 2px
-        background: $black-color
+        background: $white-bg
         transition: all ease-in .1s
 
-.icon-white
-    background: $white-bg
+.icon-black
+    background: $black-color
     &::before
-        background: $white-bg
+        background: $black-color
     &::after
-        background: $white-bg
+        background: $black-color
 
 @media (max-width: 800px)
     .icon-container

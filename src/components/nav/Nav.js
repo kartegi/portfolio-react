@@ -13,10 +13,10 @@ function Nav({scroll, column, handleBurgerClick}) {
                     <li key={i} className={`menu-item ${scroll && "item__white"}`}>
                         {    
                             item === 'Portfolio' ?
-                                (<Link onClick={handleBurgerClick} className={`menu-link ${scroll && 'link__white'}`} to='/portfolio'>{item}</Link>) :
+                                (<Link onClick={handleBurgerClick} className={`menu-link ${scroll && 'link__black'}`} to='/portfolio'>{item}</Link>) :
                             (<HashLink
                                 onClick={handleBurgerClick}
-                                className={`menu-link ${scroll && 'link__white'}`}
+                                className={`menu-link ${scroll && 'link__black'}`}
                                 to={"/#"+(item === 'About me' ? 'about' : item.toLocaleLowerCase())}
                             >{item}</HashLink>)
                         }

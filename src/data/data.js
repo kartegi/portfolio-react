@@ -1,5 +1,5 @@
 import calcImg from '../img/calc.jpeg'
-import dataTableImg from '../img/data-table.jpeg'
+import dataTableImg from '../img/data-table.webp'
 import devListImg from '../img/dev-list.jpeg'
 
 export const projectList = {

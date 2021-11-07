@@ -20,12 +20,12 @@ function NavBar({handleBurgerClick}) {
     return (
         <div className={`navbar ${scroll && "navbar__bg"}`}>
             <div className="container flex">
-                <div className={`logo ${scroll && "logo__white"}`}>
+                <div className={`logo ${scroll && "logo__black"}`}>
                     Aslan's Portfolio
                 </div>
                 <Nav scroll={scroll} />
                 <div onClick={handleBurgerClick} className="icon-container">
-                    <div className={`burger-icon ${scroll && 'icon-white'}`}></div>
+                    <div className={`burger-icon ${scroll && 'icon-black'}`}></div>
                 </div>
             </div>
         </div>

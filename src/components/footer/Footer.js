@@ -4,7 +4,7 @@ import './footer.sass'
 const Footer = () => {
     return (
         <footer className='footer'>
-            <p>Aslan Egiev &#169; 2021</p>
+            <p> &#169;2021 Aslan Egiev</p>
         </footer>
     )
 }

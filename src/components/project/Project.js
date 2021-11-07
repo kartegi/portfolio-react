@@ -1,9 +1,18 @@
 import './project.sass'
+import React, { useEffect } from 'react'
 import { projectList } from '../../data/data'
 
 const Project = (props) => {
     const id = props.match.params.id
     const project = projectList.projects.filter(project => project.id === +id)[0]
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+          });
+    }, [])
 
     return (
         <div className='project'>
