@@ -30,6 +30,11 @@ const Project = (props) => {
                     <h1 className="project__title">{project.title}</h1>
                     <p>
                         {project.desc}
+                        <ul className='tech-list'>Technologies:
+                            {
+                                project.tech.map((tech, i) => <li key={i}>{tech}</li> )
+                            }
+                        </ul>
                     </p>
                 </div>
             </div>
