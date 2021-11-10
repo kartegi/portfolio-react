@@ -8,41 +8,13 @@ const About = () => {
                 <h2>About me</h2>
                 <div className="about-text">
                     <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Asperiores obcaecati doloremque
-                        veniam perspiciatis quasi, consectetur
-                        beatae optio adipisci. Tenetur vero consectetur
-                        quidem itaque at sit dolores ipsa eligendi
-                        culpa quae.
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Asperiores obcaecati doloremque
-                        veniam perspiciatis quasi, consectetur
-                        beatae optio adipisci. Tenetur vero consectetur
-                        quidem itaque at sit dolores ipsa eligendi
-                        culpa quae.
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Asperiores obcaecati doloremque
-                        veniam perspiciatis quasi, consectetur
-                        beatae optio adipisci. Tenetur vero consectetur
-                        quidem itaque at sit dolores ipsa eligendi
-                        culpa quae.
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Asperiores obcaecati doloremque
-                        veniam perspiciatis quasi, consectetur
-                        beatae optio adipisci. Tenetur vero consectetur
-                        quidem itaque at sit dolores ipsa eligendi
-                        culpa quae.
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Asperiores obcaecati doloremque
-                        veniam perspiciatis quasi, consectetur
-                        beatae optio adipisci. Tenetur vero consectetur
-                        quidem itaque at sit dolores ipsa eligendi
-                        culpa quae.
+                        I am a responsible, goal-oriented and proactive person.
+                        I have been learning frontend in depth for last six month.
+                        Before that I was studying computer science at School 21,
+                        back there I had been using C as main language, and I created
+                        few projects using C. Also I created my own server on linux.
+                        Right now I am using ReactJS as main library I spend my time in
+                        codewars and leetcode and I get a lot of fun solving programming problems
                     </p>
                 </div>
             </div>

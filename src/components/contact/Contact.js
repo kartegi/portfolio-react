@@ -2,15 +2,21 @@ import React from 'react'
 import './contact.sass'
 
 const Contact = () => {
+
+    const handleClick = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div className="contact" id='contact'>
             <div className="container">
                 <div className="contact-form">
                     <form>
-                        <p className='form-title'>Contact form is in progress</p>
+                        <p className='form-title'>Contact Me</p>
                         <input disabled placeholder='Name' type="text" className="contact-name" />
                         <input disabled placeholder='Email' className="contact-email" type="email"/>
                         <textarea disabled placeholder='Message' className="contact-message"></textarea>
+                        <button disabled className='contact__btn' type='submit' onClick={handleClick}>Send</button>
                     </form>
                 </div>
                 <div className="contact-info">
